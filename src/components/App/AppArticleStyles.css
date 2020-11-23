@@ -20,3 +20,9 @@ article.lastSlide {
 article.nextSlide {
   transform: translateX(100%);
 }
+
+.icon {
+  font-size: 3rem;
+  margin-top: 1rem;
+  color: var(--clr-primary-5);
+}

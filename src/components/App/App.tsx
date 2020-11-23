@@ -18,7 +18,7 @@ import {
 import './AppArticleStyles.css';
 
 const App: React.FC = () => {
-  const [people, setPeople] = useState(data);
+  const [people] = useState(data);
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
@@ -70,7 +70,7 @@ const App: React.FC = () => {
               <PersonName>{name}</PersonName>
               <PersonTitle>{title}</PersonTitle>
               <PersonQuote>{quote}</PersonQuote>
-              <FaQuoteRight />
+              <FaQuoteRight className='icon' />
             </article>
           );
         })}
