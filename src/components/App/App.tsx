@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { FiChevronRight, FiChevronLeft } from 'react-icons/fi';
 import { FaQuoteRight } from 'react-icons/fa';
 import data from '../../data.json';
+import { PeopleModel } from '../../models/people.model';
 import {
   Section,
   Title,
@@ -18,7 +19,7 @@ import {
 import './AppArticleStyles.css';
 
 const App: React.FC = () => {
-  const [people] = useState(data);
+  const [people] = useState<PeopleModel[]>(data);
   const [index, setIndex] = useState(0);
 
   useEffect(() => {
