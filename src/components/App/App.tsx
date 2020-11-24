@@ -20,7 +20,7 @@ import './AppArticleStyles.css';
 
 const App: React.FC = () => {
   const [people] = useState<PeopleModel[]>(data);
-  const [index, setIndex] = useState(0);
+  const [index, setIndex] = useState<number>(0);
 
   useEffect(() => {
     const lastIndex = people.length - 1;
